@@ -141,7 +141,7 @@ game.catchPokemon = function(pokemonObj) {
 game.catchPokemon(pokemon[30]);
 console.log(game.party);
 
-//REVIEW-----------------------------------------------------------------
+
 /*
 Exercise 11
 1. Copy the `catchPokemon` method that you just wrote above, and paste it below. Modify it so that it also decreases the number of pokeballs in your inventory each time you catch a Pokémon.
@@ -161,9 +161,9 @@ game.pokeballs = function(pokemonObj) {
     if (game.items[i].name === 'pokeball') {
       game.items[i].quantity -= 1;
       console.log(game.items);
-     };
-   };
-   };
+      };
+    };
+  };
 
 game.pokeballs(pokemon[30]);
 
@@ -187,7 +187,6 @@ function completed() {
 completed();
 console.log(game.gyms);
 
-//REVIEW-----------------------------------------------------------------
 /*
 Exercise 13
 1. Create a `gymStatus` method in `game` to tally completed and incomplete gyms.
